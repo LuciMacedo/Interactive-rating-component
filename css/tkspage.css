@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --lightgrey: hsl(217, 12%, 63%);
+    --mediumgrey: hsl(216, 12%, 54%);
+    --darkblue: hsl(213, 19%, 18%);
+    --verydarkblue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--verydarkblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font: 0.93em 'Overpass', sans-serif;
+}
+
+.tks-wrapper {
+    width: 80%;
+    height: 60%;
+    background: rgb(114,129,151);
+    background: linear-gradient(180deg, rgba(114,129,151,1) 0%, rgba(62,73,87,1) 0%, rgba(27,33,41,1) 40%);
+    border-radius: 1.25em;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tks-image {
+    width: 60%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.tks-image img{ 
+    width: 8em;
+    height: 6em;
+    
+}
+
+
+.pill {
+    width: 60%;
+    height: 10%;
+    color: var(--orange);
+    background-color: var(--darkblue);
+    border-radius: 20px;
+    text-align:center;
+    padding: 5px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tks-text {
+    width: 90%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.tks-text h1 {
+    color: var(--white);
+    font-size: 1.5em;
+    margin-bottom: .8em;
+
+}
+
+.tks-text p {
+    color: var(--lightgrey);
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: .9em;
+}
+
+@media only screen and (min-width: 768px) {
+    .tks-wrapper {
+        width: 40%;
+        height: 57%;
+        padding: 1%; 
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+    .tks-wrapper {
+        width: 35%;
+        height: 50%;
+        padding: 1%; 
+    }
+
+    .pill {
+        font-size: 1.5em;
+    }
+
+    .tks-text h1 {
+        font-size: 2em;
+        
+    }
+
+    .tks-text p {
+        font-size: 1.2em;
+        
+    }
+}
