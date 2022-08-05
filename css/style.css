@@ -28,7 +28,7 @@ p {
 
 body {
     background-color: var(--verydarkblue);
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -36,20 +36,19 @@ body {
     align-items: center;
     font: 0.93em 'Overpass', sans-serif;
     font-size: 15px; 
-    margin: auto;
+    margin: 2rem;
 }
 
 
 .rating-wrapper, 
 .tks-wrapper{
-    width: 90%;
-    height: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
-    border-radius: 0.625rem;
-    background-color: var(--darkblue);
-    border-radius: 0.625rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(180deg, rgba(114,129,151,1) 0%, rgba(62,73,87,1) 0%, rgba(27,33,41,1) 32%);
+    border-radius: 1rem;
     
 }
 
@@ -101,7 +100,7 @@ body {
 
 .rating-submit {
     width: 100%;
-    height: 5rem;
+    height: 3rem;
     border:none;
     border-radius: 30px;
     background-color: var(--orange);
@@ -197,11 +196,25 @@ body {
     }
 }
 
+@media only screen and (min-width: 1024px) {
+    .rating-wrapper, 
+    .tks-wrapper{
+    width: 38%;
+    height: 50%;
+    }
+
+    .rating-question p {
+        font-size: 1rem;
+    }
+
+}
+
+
 @media only screen and (min-width: 1440px) {
 
     .rating-wrapper, 
     .tks-wrapper{
-    width: 35%;
+    width: 30%;
     height: 50%;
     }
 
