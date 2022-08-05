@@ -45,9 +45,8 @@ body {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
     background: linear-gradient(180deg, rgba(114,129,151,1) 0%, rgba(62,73,87,1) 0%, rgba(27,33,41,1) 32%);
-    border-radius: 1rem;
     
 }
 
@@ -170,11 +169,20 @@ body {
     display: none;
 }
 
-@media only screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
     .rating-wrapper, 
     .tks-wrapper{ 
-        width: 30%;
+       max-width: 34%;
     }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .rating-wrapper, 
+    .tks-wrapper{ 
+       max-width: 30%;
+    }
+
     .rating-question p {
         font-size: 1.3rem;
     }
