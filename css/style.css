@@ -170,48 +170,11 @@ body {
     display: none;
 }
 
-@media only screen and (min-width: 768px) {
-    body {
-        margin: auto 15rem auto;
-    }
-
-    .rating-question h1 {
-        margin-top:1rem;
-    }
-    .rating-question p {
-        font-size: .8rem;
-    }
-
-    .rating-score ul li button {
-        width: 3rem;
-        height: 3rem;
-    }
-
-    .rating-score ul li button {
-        width: 3rem;
-        height: 3rem;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    body {
-        margin: auto 30rem auto;
-    }
-
-    .rating-question p {
-        font-size: 1rem;
-    }
-
-}
-
-
 @media only screen and (min-width: 1440px) {
-
     .rating-wrapper, 
-    .tks-wrapper{
-    width: 30%;
+    .tks-wrapper{ 
+        width: 30%;
     }
-
     .rating-question p {
         font-size: 1.3rem;
     }
